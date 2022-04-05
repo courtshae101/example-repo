@@ -1,0 +1,28 @@
+---
+title: "Demo"
+author: "Courtney Kennedy"
+date: "1/24/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+x <- 3
+x
+```
+# Title
+
+## My graph 
+this is an example
+
+### cool stuff
+
+```{r}
+library(tidyverse)
+ggplot(data = iris, aes(x = Sepal.Length, y = Sepal.Width)) +
+  geom_point()
+```
+
